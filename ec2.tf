@@ -11,3 +11,12 @@ resource "aws_instance" "studygroup" {
   }
 }
 
+resource "aws_ebs_volume" "example" {
+    provider = aws.accountA
+  availability_zone = "eu-west-1a"
+  size              = 40
+
+  tags = {
+    Name = "HelloWorld"
+  }
+}
