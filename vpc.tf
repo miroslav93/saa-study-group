@@ -14,7 +14,7 @@ resource "aws_vpc" "stydygroup_vpc" {
 resource "aws_subnet" "stydygroup_public_subnet" {
   vpc_id     = aws_vpc.stydygroup_vpc.id
   cidr_block = "10.0.0.0/20"
-  availability_zone = "us-east-1a"
+  availability_zone = "eu-west-1a"
 
   provider = aws.accountA
 
@@ -31,7 +31,7 @@ resource "aws_subnet" "stydygroup_public_subnet" {
 resource "aws_subnet" "stydygroup_public_subnet-2" {
   vpc_id     = aws_vpc.stydygroup_vpc.id
   cidr_block = "10.0.16.0/20"
-  availability_zone = "us-east-1b"
+  availability_zone = "eu-west-1b"
 
   provider = aws.accountA
 

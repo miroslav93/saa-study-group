@@ -9,6 +9,6 @@ terraform {
 
 provider "aws" {
   alias   = "accountA"
-  region  = "us-east-1"
+  region  = "eu-west-1"
   profile = "studygroup-a-terraform"
 }
